@@ -37,9 +37,6 @@ function iChing() {
     left: 0, 
     behavior: 'smooth'
   });
-  document.querySelector('.introduction').scrollIntoView({
-    behavior: 'smooth'
-  })
   window.location.hash = results;
 
   fadeAlong(document.getElementById('again'));

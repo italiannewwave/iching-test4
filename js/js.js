@@ -19,13 +19,13 @@ cast.addEventListener('click', function(e){
     results += ResultingLine;
   }
   iChing();
-});
-
-function iChing() {
   window.top.scrollTo(0,0);
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
   window.location.hash = results;
+});
+
+function iChing() {
   fadeToResults();
   listLines();
   showLeft();

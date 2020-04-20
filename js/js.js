@@ -161,4 +161,4 @@ function getChanges() {
   }
 }
 
-$("html, body").animate({ scrollTop: $(".chat-msg-list")}, 1000);
+$("html, body").animate({ scrollTop: $("button")}, 1000);

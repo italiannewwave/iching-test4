@@ -1,6 +1,8 @@
-
-html, body{
-  overflow-x: hidden;
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
 }
 #main {
   display: grid;

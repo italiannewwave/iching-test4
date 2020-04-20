@@ -75,6 +75,9 @@ function fadeToResults(el) {
   document.getElementById('left').style.display = '';
   document.getElementById('right').style.display = '';
   fadeAlong(changing);
+   window.top.scrollTo(0,0);
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 function buildLinks(el) {

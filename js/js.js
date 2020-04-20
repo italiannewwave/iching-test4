@@ -161,4 +161,4 @@ function getChanges() {
   }
 }
 
-$("html, body").animate({ scrollTop: $("button")}, 1000);
+

@@ -27,9 +27,9 @@ function iChing() {
   showLeft();
   getChanges();
   showRight()
-$("#button").on("click", function() {
-  $("body").scrollTop(0);
-});
+  window.top.scrollTo(0,0);
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
   window.location.hash = results;
 
   fadeAlong(document.getElementById('again'));

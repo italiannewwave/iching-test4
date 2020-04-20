@@ -160,3 +160,5 @@ function getChanges() {
     changing_desc.innerHTML = 'All changing lines! Only the transformed hexagram applies!'
   }
 }
+
+$("html, body").animate({ scrollTop: $(".chat-msg-list")}, 1000);

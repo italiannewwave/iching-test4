@@ -22,15 +22,16 @@ cast.addEventListener('click', function(e){
 });
 
 function iChing() {
+  window.top.scrollTo(0,0);
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  window.location.hash = results;
   fadeToResults();
   listLines();
   showLeft();
   getChanges();
   showRight()
-  window.top.scrollTo(0,0);
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  window.location.hash = results;
+
 
   fadeAlong(document.getElementById('again'));
 };

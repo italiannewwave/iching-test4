@@ -19,19 +19,19 @@ cast.addEventListener('click', function(e){
     results += ResultingLine;
   }
   iChing();
-  window.top.scrollTo(0,0);
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  window.location.hash = results;
 });
 
 function iChing() {
   fadeToResults();
+  window.top.scrollTo(0,0);
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
   listLines();
   showLeft();
   getChanges();
   showRight()
 
+  window.location.hash = results;
 
   fadeAlong(document.getElementById('again'));
 };

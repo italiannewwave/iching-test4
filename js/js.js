@@ -27,9 +27,19 @@ function iChing() {
   showLeft();
   getChanges();
   showRight()
-  window.top.scrollTo(0,0);
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scroll({
+    top: 2500,
+    left: 0, 
+    behavior: 'smooth'
+  });
+  window.scrollBy({
+    top: 100,
+    left: 0, 
+    behavior: 'smooth'
+  });
+  document.querySelector('.introduction').scrollIntoView({
+    behavior: 'smooth'
+  })
   window.location.hash = results;
 
   fadeAlong(document.getElementById('again'));

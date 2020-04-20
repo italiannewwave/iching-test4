@@ -21,19 +21,15 @@ cast.addEventListener('click', function(e){
   iChing();
 });
 
-$("#button").on("click", function() {
-  $("body").scrollTop(0);
-});
-
 function iChing() {
   fadeToResults();
   listLines();
   showLeft();
   getChanges();
   showRight()
-  window.top.scrollTo(0,0);
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+$("#button").on("click", function() {
+  $("body").scrollTop(0);
+});
   window.location.hash = results;
 
   fadeAlong(document.getElementById('again'));

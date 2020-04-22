@@ -30,6 +30,12 @@ function iChing() {
   window.top.scrollTo(0,0);
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+  
+  setTimeout(() => {
+    window.top.scrollTo(0,0);
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }, 100)
 
   window.location.hash = results;
 
